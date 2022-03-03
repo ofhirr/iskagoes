@@ -1,0 +1,116 @@
+@keyframes pop-up-Animation {
+    0% {
+        transform: scale(1.1);
+        opacity: 5%;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes pan-down-Animation {
+    0% {
+      transition: all 300ms ease-in-out 350ms;
+      top: 0px;
+    }
+    100% {
+      top: 170px;
+    }
+}
+.fade-out {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 1s, opacity 1s linear;
+}
+
+.pan-down {
+    transition: all 300ms ease-in-out 350ms;
+    animation: pan-down-Animation 2s;
+    animation-fill-mode: forwards;
+}
+.paragraph {
+    visibility: hidden;
+    opacity: 0; 
+    top: -120px;
+    position: absolute;
+    max-height: 500px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.37);
+    overflow-y: scroll;
+    transition: all ease 3s;
+    border-radius: 20px;
+}
+.article {
+    text-align: left;
+    text-indent: 1em;
+    top: -120px;
+    position: absolute;
+    max-height: 450px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.37);
+    overflow-y: scroll;
+    transition: all ease 3s;
+    border-radius: 20px;
+}
+.article .index-p{
+    text-align: left;
+    margin-left: 20px;
+    text-indent: 1em;
+}
+.paragraph .index-p {
+    text-align: left;
+    margin-left: 20px;
+    text-indent: 1em;
+}
+.margin-top {
+    margin-top: 15px;
+}
+.margin-bottom {
+    margin-bottom: 15px;
+}
+
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    overflow: visible;
+    background: #fff url('../images/preloader.gif') no-repeat center center;
+}
+
+.title {
+    position: relative;
+    top: -180px;
+}
+
+.hisImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 90%;
+    height: auto;
+}
+
+.caption {
+    text-align: center;
+    font-size: small;
+}
+
+.short {
+    top: -80px !important;
+}
+
+.titleShort {
+    top: -140px !important;
+}
+
+.references a{
+    text-decoration: none;
+    color: white;
+    transition: all ease .3s;
+}
+.references a:hover{
+    text-decoration: none;
+    color: rgb(209, 4, 141);
+}

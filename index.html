@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iSKAgoes</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="icon" href="images/white-logo.png" type="image/x-icon">
+  
+  <script src="js/scripts.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <script src="js/preloader.js"></script>
+</head>
+<div id="loader"></div>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="inner-width">
+      <a href="index.html" class="logo"></a>
+      <button class="menu-toggler">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-menu">
+        <a href="index.html">HOME</a>
+        <a href="history.html">HISTORY</a>
+        <a href="features.html">FEATURES </a>
+        <a href="prepare.html">PREPARATION</a>
+        <a href="references.html">REFERENCES</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home -->
+  <section id="home">
+    <div class="inner-width">
+      <div class="content">
+        <h1 class="pan-up" id="pageTitle">iSKA</h1>
+        <div class="buttons" id="lowerNav">
+          <a href="gallery.html">Gallery</a>
+          <a href="#" onclick="reveal()">Content</a>
+        </div>
+        <div class="paragraph" id="indexContent">
+          <p class="index-p margin-top">
+            As we all know that one of Philippines tradition is celebrating feast, festival or fiesta in every provinces or villages. This is in respect for the Parish Saint or to admire the hometown people and it’s part of the tourism of the place.
+          </p> <br>
+          <p class="index-p">
+            Santa Rosa City, Laguna—This city marked its 21st Sikhayan Festival on February 7 with the theme “Isang Tugtog, Isang Awit, sa Sikhayan Pag-iisahin” (One Beat, One Song, United in Sikhayan).
+          </p> <br>
+          <p class="index-p">
+            Sta. Rosa, named from the first patron saint of South America-santa Rosa de Lima, Peru.  As a sign of their patron saint, the Rosarians build the Santa Rosa De Lima Church near the city Plaza.
+          </p> <br>
+          <p class="index-p">
+            Sikhayan stands for Sikap Kabuhayan, an annual festival celebrating the Roseñian’s spirit of enterprise which through the decades has fueled Santa Rosa’s economic growth.  It recognizes the contributions made by Santa Rosa’s sectors, from farmers, fisherfolks, artisans, workers and entrepreneurs big and small, to the city’s continuing progress.
+          </p> <br>
+          <p class="index-p">
+            Sikhayan recognizes the contributions made by Santa Rosa’s sectors, from farmers, fisherfolks, artisans, workers, and entrepreneurs big and small, to the city’s continuing progress.
+          </p> <br>
+          <p class="index-p">
+            Festival is also held in conjunction with Santa Rosa’s Founding Anniversary as a separate and independent town in the Province of Laguna 221 years ago. The theme for this year’s sikhayan festival is “Pagsiskhay ng mamayanan, tungo sa Pagunlad ng Payamayanan. The Parade and the street dancing are among the highlight of this event”.
+          </p> <br>
+          <p class="index-p">
+            Coinciding with the city’s founding as a separate and independent town in the Province of Laguna, the Sikhayan Festival showcases the Roseñians perseverance and determination to improve their lives and that of their communities.  It is a festival that pays tribute to the people’s unrelenting and resolute effort, to their profound sense of community, to their deeply rooted cultural heritage, and to their enterprising spirit. As proven by its history, the Roseñians have work hard and the Sikhayan Festival is the people’s way of giving thanks and looking forward to a much better future.
+          </p> <br>
+          <p class="index-p">
+            This year’s Sikhayan Festival on January 18 marks another milestone in the city’s history. It is a symbolic pledge made by Roseñians towards a promising future carved through effort and hard work. With more progress anticipated to come in the near future, the Sikyahan this year signals the birth of modern city.
+          </p> <br>
+          <p class="index-p">
+            As traditionally observed, the Sikhayan Festival is marked with colourful street dancing towards the city plaza where an opening program is held. The much-awaited street dance competition is the highlight of the event.
+          </p> <br>
+          <p class="index-p">
+            President Rodrigo Duterte has declared January 18 a special non-working day in Santa Rosa City for the celebration of its founding anniversary and the Sikhayan Festival.
+          </p> <br>
+          <p class="index-p">
+            The holiday was formalized in Proclamation No. 880 signed by Executive Secretary Salvador Medialdea on January 6, 2020.
+          </p> <br>
+          <p class="index-p margin-bottom">
+            In declaring January 18 as a special non-working day, Malacañang said “it is but fitting and proper that the people of the City of Santa Rosa be given full opportunity to celebrate and participate in the occasion with appropriate ceremonies.”
+          </p>
+        </div>  
+    </div>
+    </div>
+  </section>
+</body>
+<script>
+  function reveal() {
+    document.getElementById("pageTitle").classList.remove("pan-up");
+    document.getElementById("pageTitle").classList.add("fade-out");
+    document.getElementById("lowerNav").classList.add("fade-out");
+    document.getElementById("indexContent").style.visibility = "visible";
+    document.getElementById("indexContent").style.opacity = "1";
+    setTimeout(function() {
+    document.getElementById("pageTitle").style.display = "none";
+    document.getElementById("indexContent").style.position = "relative";
+    document.getElementById("indexContent").style.top = "-30px";
+}, 100);
+  }
+</script>
+</html>

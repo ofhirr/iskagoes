@@ -1,0 +1,255 @@
+@keyframes pan-up-Animation {
+  0% {
+    transition: all 300ms ease-in-out 350ms;
+    opacity: 0%;
+    top: 30px;
+  }
+  100% {
+    transition: all 300ms ease-in-out 350ms;
+    opacity: 100%;
+    top: 10px;
+  }
+}
+.pan-up {
+  transition: all 300ms ease-in-out 350ms;
+  animation: pan-up-Animation 2s;
+}
+.pop-up {
+  transition: all 300ms ease-in-out 350ms;
+  animation: pop-up-Animation 3s;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Montserrat",sans-serif;
+  box-sizing: border-box;
+}
+
+.navbar{
+  position: fixed;
+  background-color: transparent;
+  width: 100%;
+  padding: 30px 0;
+  top: 0;
+  z-index: 999;
+  transition: .3s linear;
+}
+
+.inner-width{
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 40px;
+}
+
+.navbar .inner-width{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  width: 65px;
+  height: 52px;
+  background-image: url(../images/white-logo.png);
+  background-size: contain;
+}
+
+.menu-toggler{
+  background: none;
+  width: 30px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  z-index: 999;
+  display: none;
+}
+
+.menu-toggler span{
+  display: block;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+  position: relative;
+  transition: .3s linear;
+}
+
+.navbar-menu a{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 30px;
+  transition: .2s linear;
+  margin-left: 75px;
+}
+
+.navbar-menu a:hover{
+  color: #fd618f !important;
+}
+
+.sticky{
+  background-color: #fff;
+  padding: 18px 0;
+}
+
+.sticky .logo{
+  background-image: url(../images/black-logo.png);
+}
+
+.sticky .navbar-menu a{
+  color: #111;
+}
+
+.sticky .menu-toggler span{
+  background-color: #111;
+}
+.historyPage {
+  background: url(../images/history-background.jpg) no-repeat center !important;
+}
+.featuresPage {
+  background: url(../images/features-background.jpg) no-repeat center !important;
+}
+.preparePage {
+  background: url(../images/prepare-background.jpg) no-repeat center !important;
+}
+#home{
+  height: 100vh;
+  min-height: 500px;
+  background: url(../images/index-background.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#home .inner-width{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+#home .content{
+  width: 100%;
+  color: #fff;
+  position: relative;
+}
+
+#home .content h2{
+  position: relative;
+  font-size: 35px;
+  margin-bottom: 40px;
+}
+
+#home .content h1{
+  position: relative;
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+
+#home .content h1::after{
+  content: "goes";
+}
+.sm {
+  position: relative;
+}
+.sm a{
+  color: #fff;
+  font-size: 22px;
+  margin: 0 10px;
+  transition: .2s linear;
+}
+
+.sm a:hover{
+  color: #fd618f;
+}
+
+#home .buttons{
+  margin-top: 60px;
+  position: relative;
+}
+
+#home .buttons a{
+  display: inline-block;
+  margin: 15px 30px;
+  color: #fd618f;
+  font-size: 15px;
+  font-weight: 500;
+  width: 180px;
+  border: 1px solid #fd618f;
+  padding: 14px 0;
+  border-radius: 6px;
+  transition: .2s linear;
+}
+
+#home .buttons a:hover,
+#home .buttons a:nth-child(2)
+{
+  background-color: #fd618f;
+  color: #fff;
+}
+
+
+@media screen and (max-width: 980px){
+  .menu-toggler{
+    display: block;
+  }
+
+  .navbar-menu{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: #353b48;
+    top: 0;
+    right: -100%;
+    max-width: 400px;
+    padding: 80px 50px;
+    transition: .3s linear;
+  }
+
+  .navbar-menu a{
+    display: block;
+    font-size: 30px;
+    margin: 30px 0;
+  }
+
+  .sticky .navbar-menu{
+    background-color: #f1f1f1;
+  }
+  
+  .navbar-menu.active{
+    right: 0;
+  }
+
+  .menu-toggler.active span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 4px;
+  }
+
+  .menu-toggler.active span:nth-child(2){
+    opacity: 0;
+  }
+
+  .menu-toggler.active span:nth-child(3){
+    transform: rotate(45deg);
+    bottom: 14px;
+  }
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
